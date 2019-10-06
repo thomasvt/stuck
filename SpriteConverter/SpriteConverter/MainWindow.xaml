@@ -1,0 +1,46 @@
+﻿<Window x:Class="PogoDataConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpriteConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1024">
+    <TabControl>
+        <TabItem Header="Sprites">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" >
+                    <CheckBox x:Name="AnchorInCenterCheckBox" DockPanel.Dock="Top" Content="Anchor in center" Margin="4" Click="AnchorInCenterCheckBox_OnClick" ToolTip="Render anchor of sprite in center vs topleft" />
+                    <CheckBox x:Name="NoCropCheckBox" DockPanel.Dock="Top" Content="no crop" Margin="4" Click="AnchorInCenterCheckBox_OnClick" ToolTip="Render anchor of sprite in center vs topleft" />
+                    <CheckBox x:Name="OneBitCheckBox" DockPanel.Dock="Top" Content="1-bit" Margin="4" ToolTip="Generate 1-bit sprite" />
+                </StackPanel>
+                <TextBox IsReadOnly="True" x:Name="CodeTextBox" AllowDrop="True" PreviewDragOver="CodeTextBox_OnPreviewDragOver" Drop="Window_Drop" FontFamily="Consolas">
+                </TextBox>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Level">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" >
+                    <TextBlock VerticalAlignment="Center" Text="Level folder: " Margin="4"></TextBlock>
+                    <TextBox VerticalAlignment="Center" x:Name="LevelFolderTextBox" Margin="4" Text="C:\Users\Thomas\source\repos\Pogo\Pogo\assets\Levels" Width="500" />
+                    <Button Content="Generate" Padding="4" Margin="4" Click="Button_Click" />
+                </StackPanel>
+                <TextBox IsReadOnly="True" x:Name="OutputTextBox" DockPanel.Dock="Bottom" Height="150" />
+                <TextBox IsReadOnly="True" x:Name="LevelCodeTextBox" AllowDrop="True" PreviewDragOver="CodeTextBox_OnPreviewDragOver" Drop="Window_Drop" FontFamily="Consolas">
+                </TextBox>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Text">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" >
+                    <TextBlock Text="Text"></TextBlock>
+                    <TextBox x:Name="TextTextBox" Width="300" TextChanged="TextTextBox_OnTextChanged" />
+                    <TextBlock Text="Font file (drag)"></TextBlock>
+                    <TextBox x:Name="FontFileTextBox" Text="C:\Users\Thomas\source\repos\Pogo\Pogo\assets\font-draconianpixelsregular.png" Width="300" />
+                </StackPanel>
+                <TextBox IsReadOnly="True" x:Name="TextCodeTextBox" AllowDrop="True" PreviewDragOver="CodeTextBox_OnPreviewDragOver" Drop="Window_Drop" FontFamily="Consolas">
+                </TextBox>
+            </DockPanel>
+        </TabItem>
+    </TabControl>
+</Window>
