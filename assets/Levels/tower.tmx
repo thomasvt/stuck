@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="14" height="142" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="31">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="14" height="142" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="32">
  <tileset firstgid="1" name="Pogo" tilewidth="32" tileheight="32" tilecount="0" columns="0"/>
  <tileset firstgid="1" source="Pogo.tsx"/>
  <layer id="4" name="Tile Layer 1" width="14" height="142">
@@ -143,13 +143,13 @@
 0,0,0,1,1,1,1,1,1,1,1,1,1,1,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,50,0,0,0,0,0,0,0,0,27,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,39,39,
+0,0,0,0,0,0,0,0,0,0,0,0,0,39,
+0,50,0,0,0,0,0,0,0,0,27,0,20,39
 </data>
  </layer>
  <objectgroup id="2" name="Object Layer 1">
-  <object id="1" name="entry" x="168.875" y="2262.88">
+  <object id="1" name="entrance" x="168.875" y="2262.88">
    <point/>
   </object>
   <object id="2" name="tower.portal1" x="215" y="1658">
@@ -192,14 +192,11 @@
   <object id="19" name="tower_top_stepup" x="219" y="121">
    <point/>
   </object>
-  <object id="20" name="tower_exit" x="8.66667" y="55.6667">
+  <object id="20" name="tower_cleared" x="8.66667" y="55.6667">
    <point/>
   </object>
-  <object id="21" name="sevenportals_entrance" x="200.333" y="56.3333">
-   <point/>
-  </object>
-  <object id="22" name="tower_exit" x="180.667" y="36.3333" width="5.66667" height="22.3333"/>
-  <object id="23" name="sevenportals_entrance" x="200.333" y="56.3333">
+  <object id="22" name="tower_cleared" x="180.667" y="36.3333" width="5.66667" height="22.3333"/>
+  <object id="23" name="sevenportals.portal5_return" x="201.151" y="57.6969">
    <point/>
   </object>
   <object id="24" name="tower_stairs2" x="10.3333" y="439.333">
@@ -215,5 +212,8 @@
    <point/>
   </object>
   <object id="30" name="tower_top" x="161.667" y="226.667" width="11" height="57"/>
+  <object id="31" name="sevenportals.portal5_return" x="201" y="2265.25">
+   <point/>
+  </object>
  </objectgroup>
 </map>

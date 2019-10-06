@@ -22,7 +22,7 @@
             <DockPanel>
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" >
                     <TextBlock VerticalAlignment="Center" Text="Level folder: " Margin="4"></TextBlock>
-                    <TextBox VerticalAlignment="Center" x:Name="LevelFolderTextBox" Margin="4" Text="C:\Users\Thomas\source\repos\Pogo\Pogo\assets\Levels" Width="500" />
+                    <TextBox VerticalAlignment="Center" x:Name="LevelFolderTextBox" Margin="4" Text="C:\Users\Thomas\source\repos\Stuck\assets\Levels" Width="500" />
                     <Button Content="Generate" Padding="4" Margin="4" Click="Button_Click" />
                 </StackPanel>
                 <TextBox IsReadOnly="True" x:Name="OutputTextBox" DockPanel.Dock="Bottom" Height="150" />
