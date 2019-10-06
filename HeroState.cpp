@@ -1,0 +1,7 @@
+namespace actors
+{
+	namespace hero
+	{
+		
+	}
+}

@@ -1,0 +1,2 @@
+memory:
+* sprites: indexed palette per sprite or global (some sprites use only 4 colors)

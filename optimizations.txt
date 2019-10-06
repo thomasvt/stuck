@@ -1,0 +1,5 @@
+7/6/2019
+flash%	CPU%	freeram		change
+42		68		1471		
+42		66		1527		removed neopixels in Gamebuino library
+42		66		1535		removed gui from Gamebuino lib
