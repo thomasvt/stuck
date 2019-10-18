@@ -18,7 +18,7 @@
                 </TextBox>
             </DockPanel>
         </TabItem>
-        <TabItem Header="Level">
+        <TabItem Header="Level" Height="22" Margin="-2,-2,-2.333,0" VerticalAlignment="Top">
             <DockPanel>
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" >
                     <TextBlock VerticalAlignment="Center" Text="Level folder: " Margin="4"></TextBlock>
