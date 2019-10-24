@@ -4,7 +4,7 @@
  <tileset firstgid="1" source="Pogo.tsx"/>
  <layer id="4" name="Tile Layer 1" width="14" height="142">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,39,49,39,
 0,0,0,0,0,0,0,0,0,0,0,39,39,39,
 0,0,0,0,0,0,0,0,0,0,0,39,0,39,
 43,45,0,0,0,0,0,0,0,0,0,39,20,39,
@@ -196,7 +196,7 @@
    <point/>
   </object>
   <object id="22" name="tower_cleared" x="180.667" y="36.3333" width="5.66667" height="22.3333"/>
-  <object id="23" name="sevenportals.portal4_return" x="201.151" y="57.6969">
+  <object id="23" name="tutorial_arrowclimb.entry" x="201.151" y="57.6969">
    <point/>
   </object>
   <object id="24" name="tower_stairs2" x="10.3333" y="439.333">
